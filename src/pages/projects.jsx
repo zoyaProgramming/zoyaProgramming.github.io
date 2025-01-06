@@ -1,10 +1,10 @@
 
 import img from '../assets/images/2047.png'
 
-function Project({imgSrc, description, linkSrc}){
+function Project({imgSrc, description, linkSrc, alt}){
   return(
     <div className='div-project'>
-      <a href={linkSrc}><img src={imgSrc} width={"100%"}/></a>
+      <a href={linkSrc}><img src={imgSrc} width={"100%"} alt={alt}/></a>
       <p>
         {description}
       </p>
@@ -18,7 +18,7 @@ export default function Projects(){
   return (
     <>
       <div className="div-parent-projects">
-        <Project imgSrc={img} linkSrc ={"https://zoyaprogramming.github.io/My2048Clone/"} description={description2048}></Project>
+        <Project imgSrc={img} linkSrc ={"https://zoyaprogramming.github.io/My2048Clone/"} description={description2048} alt={"a screenshot of the author's 2048 game"}></Project>
       </div>
     
     </>
